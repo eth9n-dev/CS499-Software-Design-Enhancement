@@ -5,7 +5,7 @@ class LoginDatabase():
 
     # On initialization, we create the file if it does not exist, or open it if it already exists
     def __init__(self) -> None:
-        self.con = sqlite3.connect("./data/accounts.db")
+        self.con = sqlite3.connect("Enhanced Inventory Tracker/data/accounts.db")
         self.cur = self.con.cursor()
         print("Database connection initialized.")
         
